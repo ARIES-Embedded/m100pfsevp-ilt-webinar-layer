@@ -1,0 +1,23 @@
+// SPDX-License-Identifier: GPL-2.0
+/*
+ * Copyright (C) 2021 - Moritz von Dawans <mvd@aries-embedded.de>
+ */
+
+/dts-v1/;
+#include "m100pfsevp-sdcard.dts"
+
+/ {
+
+    L44: soc {
+        aries_ilt: aries_ilt@41000000 {
+            #address-cells = <2>;
+            #size-cells = <2>;
+            compatible = "aries,aries-ilt";
+            reg = <0x00 0x41000000 0x0 0x40>;
+            reg-names = "control";
+            interrupt-parent = <&L1>;
+            interrupts = <118>;
+            status = "okay";
+        };
+    };
+};

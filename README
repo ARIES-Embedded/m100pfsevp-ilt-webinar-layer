@@ -1,0 +1,43 @@
+This README file contains information on the contents of the meta-webinar layer.
+
+Dependencies
+============
+
+  URI:      git://github.com/openembedded/meta-openembedded
+  branch:   master
+
+  URI:      git://github.com/riscv/meta-riscv
+  branch:   master
+
+  URI:      git://github.com/openembedded/openembedded-core
+  branch:   master
+
+  URI:      https://github.com/ARIES-Embedded/meta-polarfire-soc-yocto-bsp
+  branch:   aries-v2021.08
+
+Patches
+=======
+
+Please submit any patches against the meta-webinar layer to the xxxx mailing list (xxxx@zzzz.org)
+and cc: the maintainer:
+
+Maintainer: Moritz von Dawans <mvd@aries-embedded.de>
+
+Table of Contents
+=================
+
+  I. Adding the meta-webinar layer to your build
+ II. Misc
+
+
+I. Adding the meta-webinar layer to your build
+=================================================
+
+Run 'bitbake-layers add-layer meta-webinar'
+
+II. Misc
+========
+
+This layer is used as an example in a webinar only.
+You need to modify your U-boot environment to use the correct dtb on boot if you want to load and test the UIO driver.
+
